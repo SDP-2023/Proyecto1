@@ -9,75 +9,84 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/simulation/modelsim
+T_opt
+!s110 1676969545
+Vhe>NA1QAU6d8m:8WiUYC:2
+04 8 4 work tb_count fast 0
+=1-2c4d54beb5e3-63f48649-db-1d34
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L cycloneive_ver -L gate_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.2;71
 vcount
-Z1 !s110 1676969279
+Z2 !s110 1676969544
 !i10b 1
 !s100 9^R93llzabAB<5S3ijD=@0
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IXCa?5M^;zlTUQ5^J[j9eJ2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1676968245
-Z5 8Proyecto1_7_1200mv_85c_slow.vo
-Z6 FProyecto1_7_1200mv_85c_slow.vo
+Z5 w1676968245
+Z6 8Proyecto1_7_1200mv_85c_slow.vo
+Z7 FProyecto1_7_1200mv_85c_slow.vo
 !i122 0
 L0 31 243
-Z7 OL;L;2020.2;71
+Z8 OL;L;2020.2;71
 r1
 !s85 0
 31
-Z8 !s108 1676969279.000000
-Z9 !s107 Proyecto1_7_1200mv_85c_slow.vo|
-Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Proyecto1_7_1200mv_85c_slow.vo|
+Z9 !s108 1676969544.000000
+Z10 !s107 Proyecto1_7_1200mv_85c_slow.vo|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Proyecto1_7_1200mv_85c_slow.vo|
 !i113 0
-Z11 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z12 !s92 -vlog01compat -work work +incdir+. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z13 tCvgOpt 0
-vhard_block
+Z12 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -vlog01compat -work work +incdir+. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
+vhard_block
+R2
 !i10b 1
 !s100 M1N]^?4d_I7U`_KSeQ?Q51
-R2
-IG<kFeU]^REYZZkneT3h3l3
 R3
-R0
+IG<kFeU]^REYZZkneT3h3l3
 R4
+R0
 R5
 R6
+R7
 !i122 0
 L0 275 34
-R7
+R8
 r1
 !s85 0
 31
-R8
 R9
 R10
-!i113 0
 R11
+!i113 0
 R12
 R13
-vtb_count
 R1
-!i10b 1
-!s100 EQd=RAS4KmZ<CT?BILlRm1
+vtb_count
 R2
-IZn[MC>jWGDz=gC?n^U^P<3
+!i10b 1
+!s100 Z<Y80EY=ceUEC==oc26_D2
 R3
+Ii1F1m@:aU5oi_[BWo5f_H0
+R4
 R0
-w1676968890
+w1676969484
 8C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v
 FC:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v
 !i122 1
 L0 9 58
-R7
+R8
 r1
 !s85 0
 31
-R8
+R9
 !s107 C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1|C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v|
 !i113 0
-R11
+R12
 !s92 -vlog01compat -work work +incdir+C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R13
+R1
