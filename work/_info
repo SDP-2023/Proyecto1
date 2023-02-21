@@ -32,6 +32,31 @@ r1
 !i113 1
 Z4 o-work work
 Z5 tCvgOpt 0
+vshift_register
+Z6 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z7 !s110 1676969147
+!i10b 1
+!s100 =k^dMcQ>ZXzJoY3CM6_>L0
+R1
+I1S5V?YJ7UBEXBUoP39e3X1
+R2
+S1
+R0
+w1676964708
+8./shift_register.sv
+F./shift_register.sv
+!i122 6
+L0 1 38
+R3
+r1
+!s85 0
+31
+Z8 !s108 1676969147.000000
+!s107 ./shift_register.sv|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
+Z9 !s90 -reportprogress|300|-work|work|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
+!i113 1
+R4
+R5
 vtb_count
 !s110 1676968472
 !i10b 1
@@ -52,6 +77,31 @@ r1
 !s108 1676968472.000000
 !s107 /home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_count.v|
 !s90 -reportprogress|300|-work|work|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_count.v|
+!i113 1
+R4
+R5
+vtb_shift_register
+R6
+R7
+!i10b 1
+!s100 ]4ESGRZ_j_[ZFTVZFaKVa3
+R1
+Il34<Zmd3R]lold]_3A]jC1
+R2
+S1
+R0
+w1676969138
+8/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv
+F/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv
+!i122 6
+L0 6 51
+R3
+r1
+!s85 0
+31
+R8
+Z10 !s107 ./shift_register.sv|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
+R9
 !i113 1
 R4
 R5
