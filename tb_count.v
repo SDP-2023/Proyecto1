@@ -18,7 +18,9 @@ module tb_count();
 	
 	
 	// Instanciamos las variables del contador en el propio testbench para hacer la correlación
-	count duv (
+	count #(
+		.modulo(10)
+	) duv (
 		.CLK(CLK),
 		.ENABLE(ENABLE),
 		.RSTn(RSTn),
