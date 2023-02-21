@@ -4,7 +4,7 @@
 
 module count(CLK , RSTn , ENABLE , UP_DOWN , COUNT , TC);
 
-	parameter modulo = 5 ; // modulo 
+	parameter modulo = 10 ; // modulo 
 	parameter N = $clog2(modulo-1) ; // Número de bits necesarios
 
     // Declaración de Entradas -->
