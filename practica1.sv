@@ -9,6 +9,8 @@ module practica1(
     input CLK, RSTn, ENABLE,
     output [9:0] OUTPUT
 );
+parameter modulo_contador = 1000000;
+
 // Cable de unión entre el TC y El enable del registro de desplazamiento
 wire ENABLE_REG;
 // Entrada y salida del propio registro de desplazamiento
@@ -16,7 +18,7 @@ reg SHIFT, SHIFT_OUT;
 
 // Instanciación del módulo del contador con tamaño de cuenta '10'
 count #(
-    .modulo(10)
+    .modulo(modulo_contador)
 ) contador (
     .CLK(CLK),
     .RSTn(RSTn),
