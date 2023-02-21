@@ -28,7 +28,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:52:23 on Feb 21,2023
+# Start time: 09:55:04 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -110,7 +110,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 09:52:23 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:55:04 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -122,7 +122,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:52:24 on Feb 21,2023
+# Start time: 09:55:04 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -200,7 +200,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 09:52:24 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:55:04 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists gate_work]} {
@@ -214,30 +214,30 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {Proyecto1_7_1200mv_85c_slow.vo}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:52:24 on Feb 21,2023
+# Start time: 09:55:05 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." Proyecto1_7_1200mv_85c_slow.vo 
 # -- Compiling module count
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	count
-# End time: 09:52:24 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:55:05 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1 {C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:52:24 on Feb 21,2023
+# Start time: 09:55:05 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1" C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v 
 # -- Compiling module tb_count
 # 
 # Top level modules:
 # 	tb_count
-# End time: 09:52:24 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:55:05 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  tb_count
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" tb_count 
-# Start time: 09:52:24 on Feb 21,2023
+# Start time: 09:55:05 on Feb 21,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_count(fast)
 # Loading work.count(fast)
@@ -247,13 +247,15 @@
 # Loading cycloneive_ver.cycloneive_clkctrl(fast)
 # Loading cycloneive_ver.cycloneive_mux41(fast)
 # Loading cycloneive_ver.cycloneive_ena_reg(fast)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast)
 # Loading cycloneive_ver.cycloneive_io_ibuf(fast__1)
+# Loading cycloneive_ver.cycloneive_lcell_comb(fast)
 # Loading altera_ver.dffeas(fast)
 # Loading cycloneive_ver.cycloneive_lcell_comb(fast__1)
+# Loading cycloneive_ver.cycloneive_lcell_comb(fast__2)
+# Loading cycloneive_ver.cycloneive_lcell_comb(fast__3)
+# Loading cycloneive_ver.cycloneive_lcell_comb(fast__4)
+# Loading cycloneive_ver.cycloneive_lcell_comb(fast__5)
 # Loading instances from Proyecto1_7_1200mv_85c_v_slow.sdo
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'COUNT'. The port definition is at: Proyecto1_7_1200mv_85c_slow.vo(36).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_count/duv File: C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v Line: 23
 # Loading timing data from Proyecto1_7_1200mv_85c_v_slow.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_count File: C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v
@@ -268,5 +270,5 @@
 # ** Note: $stop    : C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v(64)
 #    Time: 440 ns  Iteration: 0  Instance: /tb_count
 # Break in Module tb_count at C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v line 64
-# End time: 09:53:32 on Feb 21,2023, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 1
+# End time: 09:57:47 on Feb 21,2023, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 0
