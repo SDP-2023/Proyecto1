@@ -28,7 +28,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:42:18 on Feb 21,2023
+# Start time: 09:44:37 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -110,7 +110,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 09:42:18 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:44:37 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -122,7 +122,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:42:19 on Feb 21,2023
+# Start time: 09:44:37 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -200,7 +200,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 09:42:19 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:44:38 on Feb 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists gate_work]} {
@@ -214,35 +214,25 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {Proyecto1_7_1200mv_85c_slow.vo}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:42:20 on Feb 21,2023
+# Start time: 09:44:38 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." Proyecto1_7_1200mv_85c_slow.vo 
 # -- Compiling module count
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	count
-# End time: 09:42:20 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:44:38 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1 {C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 09:42:20 on Feb 21,2023
+# Start time: 09:44:38 on Feb 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1" C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v 
 # -- Compiling module tb_count
 # 
 # Top level modules:
 # 	tb_count
-# End time: 09:42:20 on Feb 21,2023, Elapsed time: 0:00:00
+# End time: 09:44:38 on Feb 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  tb_count
-# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" tb_count 
-# Start time: 09:42:20 on Feb 21,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): C:/Users/Carlos/Desktop/SDP_2/SDP-2023/Proyecto1/tb_count.v(22): (vopt-2732) Module parameter 'modulo' not found for override.
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./Proyecto1_run_msim_gate_verilog.do PAUSED at line 24
