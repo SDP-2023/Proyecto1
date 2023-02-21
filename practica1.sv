@@ -1,3 +1,10 @@
+/**
+    Creación del módulo própio de instancición del contador y del registro de desplazamiento
+    mediante el TC del count al ENABLE del shifter.
+    Tendrémos en cuenta que siempre que cambie la salida del shifter (OUT), se le cambiará el signo
+    y aparecerá como entrada
+**/
+
 module practica1(
     input CLK, RSTn, ENABLE,
     output [9:0] OUTPUT
@@ -29,6 +36,6 @@ shift_register #(
     .OUT_P(OUTPUT)
 );
 
-always @(SHIFT_OUT) SHIFT_IN = ~SHIFT_OUT;
+always @(SHIFT_OUT) SHIFT = ~SHIFT_OUT;
 
 endmodule
