@@ -2,14 +2,14 @@
 /**Creación de un contador binario síncrono de módulo parametrizble
     ascendente/descendente **/ 
 
-module count(CLK , RSTn, ENABLE , COUNT ,TC);
+module count(CLK , RSTn , ENABLE , UP_DOWN , COUNT , TC);
 
 	parameter modulo = 5 ; // modulo 
 	parameter N = $clog2(modulo-1) ; // Número de bits necesarios
 
     // Declaración de Entradas -->
-	input CLK, RSTn, ENABLE ; // CLK, activo a nivel alto, RST asíncrono actv a lvl bajo, Enable
-
+	input CLK, RSTn, ENABLE, UP_DOWN ; // CLK, activo a nivel alto, RST asíncrono actv a lvl bajo,
+                                       // Enable a lvl alto y Señal de contador(1), restador(0)     
     // Declaración de Salidas -->
 	output reg [N-1:0] COUNT ; // Contador de tamaño 'N' bits
 	
@@ -27,9 +27,12 @@ always @(posedge CLK or negedge RSTn)
                 // Si el contador ha llegado a su máximo, lo ponemos inicial
                 if(COUNT == modulo-1)
                     COUNT <= {N{1'b0}} ;
-                // Si no ha llegado a su máximo, incrementamos su valor en UNO
-                else 
+                // Si no ha llegado a su máximo, incrementamos su valor en UNO si UP_DOWN == 1 .
+                else if(UP_DOWN)
                     COUNT <= COUNT + 1'b1 ;
+                // Si no ha llegado a su máximo, incrementamos su valor en UNO si UP_DOWN == 0 .
+                else
+                    COUNT <= COUNT - 1'b1 ;
             end
 	end
 	
