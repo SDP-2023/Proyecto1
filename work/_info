@@ -32,8 +32,33 @@ r1
 !i113 1
 Z4 o-work work
 Z5 tCvgOpt 0
-vshift_register
+vpractica1
 Z6 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1676969552
+!i10b 1
+!s100 ^4N>aZ;V`?^_7AJOHRV770
+R1
+ImY;;PELAoim8e=Q[>4Nj10
+R2
+S1
+R0
+w1676969490
+8/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/practica1.sv
+F/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/practica1.sv
+!i122 8
+L0 8 39
+R3
+r1
+!s85 0
+31
+!s108 1676969552.000000
+!s107 /home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/practica1.sv|
+!s90 -reportprogress|300|-work|work|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/practica1.sv|
+!i113 1
+R4
+R5
+vshift_register
+R6
 Z7 !s110 1676969147
 !i10b 1
 !s100 =k^dMcQ>ZXzJoY3CM6_>L0
@@ -52,8 +77,8 @@ r1
 !s85 0
 31
 Z8 !s108 1676969147.000000
-!s107 ./shift_register.sv|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
-Z9 !s90 -reportprogress|300|-work|work|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
+Z9 !s107 ./shift_register.sv|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
+Z10 !s90 -reportprogress|300|-work|work|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
 !i113 1
 R4
 R5
@@ -100,8 +125,33 @@ r1
 !s85 0
 31
 R8
-Z10 !s107 ./shift_register.sv|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_shift_register.sv|
 R9
+R10
+!i113 1
+R4
+R5
+vtb_top
+R6
+!s110 1676969549
+!i10b 1
+!s100 5oHc;FGe8QeWlFlY4J`0_3
+R1
+IY0:5`S`UI_nDzl>_9lS1d1
+R2
+S1
+R0
+w1676969537
+8/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_top.sv
+F/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_top.sv
+!i122 7
+L0 4 52
+R3
+r1
+!s85 0
+31
+!s108 1676969549.000000
+!s107 ./practica1.sv|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_top.sv|
+!s90 -reportprogress|300|-work|work|/home/arnyminerz/Nextcloud/Estudis/UPV/2-B/SDP/Lab/1/tb_top.sv|
 !i113 1
 R4
 R5
