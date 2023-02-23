@@ -1,8 +1,12 @@
+/** Metemos en la función include, lo que es el módulo de la práctica 1 (TOP) 
+	para que coja lo que necesite de allí sin necesidad de que esté en el propio quartus.
+	
+**/
 `include "./practica1.sv"
 `timescale 1ns/100ps // Cuanto es el paso de la simulación (siempre igual)
 
 module tb_top();
-
+	// Tiempo de duración que le daremos al CLK
     localparam T = 20;
 	
 	// DUV instance
@@ -30,11 +34,12 @@ module tb_top();
 	// Test procedure (Lo que vamos ha hacer para probarlo)
 	initial
 	begin
+		// Lo inicializamos con uno valores nulos '0'
 		CLK = 0;
 		RSTn = 0;
 		ENABLE = 0;
 		
-		#(T*2)
+		#(T*2) // A partir de aquí vamos cambiando los valores de las señales para ver su funcionamiento
 		
 		RSTn = 1;
 		
