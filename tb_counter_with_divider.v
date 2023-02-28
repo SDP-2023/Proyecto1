@@ -1,5 +1,5 @@
 
-/**Crearemos ahora el testbench del contador con el divisor de frecuencia **/
+/**Crearemos ahora el testbench del contador con el divisor de frecuenciaa **/
 
 `timescale 1ns/100ps
 
