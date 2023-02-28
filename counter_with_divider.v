@@ -5,7 +5,7 @@
 	
 module counter_with_divider(CLK,RSTn,COUNT);
 	// Declaramos las entradas necesarias
-	input CLK, RSTn, UP_DOWN ;
+	input CLK, RSTn ;
 	// Declaramos las salidas necesarias
 	output [3:0] COUNT ; // Cuatro bits necesarios para el diseño
 	
