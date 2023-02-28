@@ -4,6 +4,8 @@
     Tendrémos en cuenta que siempre que cambie la salida del shifter (OUT), se le cambiará el signo
     y aparecerá como entrada
 **/
+`include "./count.v"
+`include "./shift_register.sv"
 
 module practica1(
     input CLK, RSTn, ENABLE,
@@ -12,7 +14,7 @@ module practica1(
 parameter modulo_contador = 1250000;
 
 // Cable de unión entre el TC y El enable del registro de desplazamiento
-wire ENABLE_REG;
+wire CLK_REG;
 // Entrada y salida del propio registro de desplazamiento
 reg SHIFT, SHIFT_OUT;
 
@@ -25,16 +27,16 @@ count #(
     .ENABLE(ENABLE),
     .UP_DOWN(1),
     .COUNT(),
-    .TC(ENABLE_REG)
+    .TC(CLK_REG)
 );
 
 // Instanciación del módulo del registro de desplazamiento con tamaño '10'
 shift_register #(
     .width(10)
 ) shifter (
-    .CLK(CLK),
+    .CLK(CLK_REG),
     .RSTn(RSTn),
-    .ENABLE(ENABLE_REG),
+    .ENABLE(1'b1),
     .SHIFT_IN(SHIFT),
     .SHIFT_OUT(SHIFT_OUT),
     .OUT_P(OUTPUT)
