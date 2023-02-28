@@ -43,4 +43,26 @@ shift_register #(
 // Siempre que cambie la salida del registro, lo pasamos a su entrada con signo cambiado (~)
 always @(SHIFT_OUT) SHIFT = ~SHIFT_OUT;
 
+// Declaramos un DECODIFICADOR para la asignación de los LEDs dependiendo de los bits
+always @ (OUTPUT)
+begin
+	case (OUTPUT)
+		7'b0000000: LEDS <= 8'b10000000;
+		7'b1000000: LEDS <= 8'b01000000;
+		7'b1100000: LEDS <= 8'b00100000;
+		7'b1110000: LEDS <= 8'b00010000;
+		7'b1111000: LEDS <= 8'b00001000;
+		7'b1111100: LEDS <= 8'b00000100;
+		7'b1111110: LEDS <= 8'b00000010;
+		7'b1111111: LEDS <= 8'b00000001;
+		7'b0111111: LEDS <= 8'b00000010;
+		7'b0011111: LEDS <= 8'b00000100;
+		7'b0001111: LEDS <= 8'b00001000;
+		7'b0000111: LEDS <= 8'b00010000;
+		7'b0000011: LEDS <= 8'b00100000;
+		7'b0000001: LEDS <= 8'b01000000;
+	endcase
+ end
+
+
 endmodule
