@@ -47,7 +47,7 @@ module tb_top();
 		
 		ENABLE = 1;
 		
-		#(T*14);
+		#(T*1024);
 
 		#(T*4)
 
