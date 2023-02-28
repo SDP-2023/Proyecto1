@@ -7,9 +7,9 @@
 
 module practica1(
     input CLK, RSTn, ENABLE,
-    output [9:0] OUTPUT
+    output [7:0] OUTPUT
 );
-parameter modulo_contador = 1000000;
+parameter modulo_contador = 1250000;
 
 // Cable de unión entre el TC y El enable del registro de desplazamiento
 wire ENABLE_REG;
