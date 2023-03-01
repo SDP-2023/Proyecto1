@@ -9,7 +9,7 @@
 
 module practica1(
     input CLK, RSTn, ENABLE,
-    output [7:0] OUTPUT,
+    output [6:0] OUTPUT,
     output reg [7:0] LEDS
 );
 parameter modulo_contador = 1250000;
