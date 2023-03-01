@@ -45,6 +45,9 @@ module tb_top();
 		#(T*2)
 		
 		ENABLE = 1;
+
+		@(posedge duv.TC);
+		ENABLE = 0;
 		
 		#(T*50000000);
 
