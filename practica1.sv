@@ -28,7 +28,7 @@ count #(
     .ENABLE(ENABLE),
     .UP_DOWN(1),
     .COUNT(),
-    .TC(CLK_REG)
+    .TC(CLK_REG) //CLK_REG
 );
 
 // Instanciación del módulo del registro de desplazamiento con tamaño '10'
