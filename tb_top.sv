@@ -12,16 +12,15 @@ module tb_top();
 	// DUV instance
 
 	reg CLK, RSTn, ENABLE;
-	wire [3:0] OUTPUT;
+	wire [7:0] OUTPUT, LEDS;
 
 	// Instanciamos las variables del contador en el propio testbench para hacer la correlación
-	practica1 #(
-		.modulo_contador(10)
-	) duv (
+	practica1 duv (
 		.CLK(CLK),
 		.ENABLE(ENABLE),
 		.RSTn(RSTn),
-        .OUTPUT(OUTPUT)
+        .OUTPUT(OUTPUT),
+		.LEDS(LEDS)
 	);
 
 	// Generamos el clock -->
@@ -47,7 +46,7 @@ module tb_top();
 		
 		ENABLE = 1;
 		
-		#(T*100);
+		#(T*50000000);
 
 		#(T*4)
 
