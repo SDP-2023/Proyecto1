@@ -2,7 +2,6 @@
 	para que coja lo que necesite de allí sin necesidad de que esté en el propio quartus.
 	
 **/
-`include "./practica1.sv"
 `timescale 1ns/100ps // Cuanto es el paso de la simulación (siempre igual)
 
 module tb_top();
@@ -46,7 +45,7 @@ module tb_top();
 		
 		ENABLE = 1;
 
-		@(posedge duv.TC);
+		@(posedge duv.contador.TC);
 		ENABLE = 0;
 		
 		#(T*50000000);
