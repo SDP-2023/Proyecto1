@@ -64,6 +64,7 @@ begin
 		7'b0000111: LEDS <= 8'b00010000;
 		7'b0000011: LEDS <= 8'b00100000;
 		7'b0000001: LEDS <= 8'b01000000;
+		default: LEDS <= 8'b00000000;
 	endcase
  end
 
