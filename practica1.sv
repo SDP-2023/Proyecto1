@@ -12,6 +12,7 @@ module practica1(
     output [6:0] OUTPUT,
     output reg [7:0] LEDS
 );
+// Módulo de 1.25(GHz) para hacer la reducción en frecuencia
 parameter modulo_contador = 1250000;
 
 // Cable de unión entre el TC y El enable del registro de desplazamiento
@@ -19,7 +20,7 @@ wire CLK_REG;
 // Entrada y salida del propio registro de desplazamiento
 reg SHIFT, SHIFT_OUT;
 
-// Instanciación del módulo del contador con tamaño de cuenta '10'
+// Instanciación del módulo del contador con tamaño de cuenta '1250000'
 count #(
     .modulo(modulo_contador)
 ) contador (
@@ -31,7 +32,7 @@ count #(
     .TC(CLK_REG) //CLK_REG
 );
 
-// Instanciación del módulo del registro de desplazamiento con tamaño '10'
+// Instanciación del módulo del registro de desplazamiento con tamaño '128'
 shift_register #(
     .width(128)
 ) shifter (
